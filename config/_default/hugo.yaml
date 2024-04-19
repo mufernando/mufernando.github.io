@@ -3,7 +3,7 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Academic # Website name
+title: MFR # Website name
 baseURL: 'https://example.com/' # Website URL
 
 ############################
@@ -36,8 +36,8 @@ outputs:
   home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
   section: [HTML, RSS]
 imaging:
-  resampleFilter: lanczos
-  quality: 75
+  resampleFilter: box
+  quality: 100
   anchor: smart
 timeout: 600000
 taxonomies:
