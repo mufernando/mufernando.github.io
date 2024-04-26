@@ -106,5 +106,4 @@ Recommendations from Lucie Bergeron's paper
 - [ ] KING [Robust relationship inference in genome-wide association studies](https://academic.oup.com/bioinformatics/article/26/22/2867/228512)
 - [ ] Pedigree error detection and correction PREST - [Enhanced pedigree error detection](https://pubmed.ncbi.nlm.nih.gov/12566741/)
 - [ ] Phasing with pedigrees PULSAR - [Genotype phasing in pedigrees using whole-genome sequence data](https://www.nature.com/articles/s41431-020-0574-3#Sec13)
-- [ ] 
 - [ ] SHAPEIT5 (also takes duos/trios) [Accurate rare variant phasing of whole-genome and whole-exome sequencing data in the UK Biobank](https://www.nature.com/articles/s41588-023-01415-w)
