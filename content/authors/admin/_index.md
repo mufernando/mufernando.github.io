@@ -59,12 +59,12 @@ social:
     link: "mailto:murillofer.rodrigues@gmail.com"
   - icon: twitter
     icon_pack: fab
-    link: https://twitter.com/mufernando_
-    label: Follow me on Twitter
+    link: https://bsky.app/profile/mufernando.bsky.social
+    label: Follow me on Bluesky
     display:
       header: true
-  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
-    icon_pack: fas
+  - icon: google-scholar
+    icon_pack: fab
     link: https://scholar.google.com/citations?user=GyBZOK0AAAAJ&hl=en 
   - icon: github
     icon_pack: fab
