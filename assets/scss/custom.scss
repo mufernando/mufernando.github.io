@@ -91,7 +91,20 @@ h1, h2, h3, h4, .article-title, .section-subheading {
 // ---------------------------------------------------------------------------
 
 .home-section {
-  padding: 90px 0;
+  padding: 64px 0;
+}
+
+@media (max-width: 767.98px) {
+  .home-section {
+    padding: 40px 0;
+  }
+}
+
+// Sections use `columns: '1'` (title above content); left-align titles to
+// match the biography heading instead of the theme's centered default.
+.home-section .section-heading.text-center {
+  text-align: left !important;
+  margin-bottom: 2rem !important;
 }
 
 .section-heading h1,
@@ -107,14 +120,6 @@ h1, h2, h3, h4, .article-title, .section-subheading {
     margin-top: 0.75rem;
     border-radius: 2px;
     background: linear-gradient(90deg, $sage-green, $lime-moss);
-  }
-}
-
-// Centered on small screens, like the theme's heading column
-@media (max-width: 991.98px) {
-  .section-heading h1::after {
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -164,40 +169,84 @@ h1, h2, h3, h4, .article-title, .section-subheading {
 }
 
 // ---------------------------------------------------------------------------
-// Research showcase: rounded, lifted image cards
+// Research: three cards per row (theme `card` view), stacked on phones
 // ---------------------------------------------------------------------------
 
-.view-showcase {
-  img {
-    // The theme sets an inline width of 540px, which overflows on phones
-    max-width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba($ink, 0.12);
-    background: #fff;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
+.wg-portfolio .js-layout-row {
+  > .isotope-item {
+    display: flex;
+    margin-bottom: 1.5rem;
 
-  a:hover img {
+    @media (min-width: 768px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    @media (min-width: 992px) {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+  }
+}
+
+.wg-portfolio .view-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba($ink, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 28px rgba($baltic-blue, 0.22);
+    box-shadow: 0 12px 28px rgba($baltic-blue, 0.18);
   }
 
-  .article-title a {
-    color: $ink;
+  // Dates are meaningless for research themes
+  > .article-metadata {
+    display: none;
+  }
 
-    &:hover {
-      color: $baltic-blue;
+  .img-hover-zoom {
+    border-bottom: 1px solid rgba($ink, 0.06);
+  }
+
+  .article-banner {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    // Show whole figures (letterboxed on white) rather than cropping them
+    object-fit: contain;
+    padding: 0.5rem;
+    background: #fff;
+  }
+
+  .article-title {
+    margin: 1rem 1.25rem 0.25rem !important;
+    font-size: 1.2rem;
+
+    a {
+      color: $ink;
+
+      &:hover {
+        color: $baltic-blue;
+      }
     }
   }
 
   .article-style {
+    margin: 0 1.25rem 1.25rem;
     color: $muted;
-  }
+    font-size: 0.95rem;
+    line-height: 1.55;
 
-  // Image stacks above the text on small screens; give the title room
-  @media (max-width: 767.98px) {
-    .article-title {
-      margin-top: 1rem !important;
+    p {
+      margin-bottom: 0;
     }
   }
 }
@@ -207,7 +256,8 @@ h1, h2, h3, h4, .article-title, .section-subheading {
 // ---------------------------------------------------------------------------
 
 .pub-list-item.view-citation {
-  padding: 0.75rem 1rem;
+  margin-bottom: 0.25rem !important; // theme sets 1rem inline
+  padding: 0.6rem 1rem;
   border-left: 3px solid transparent;
   border-radius: 0 8px 8px 0;
   transition: border-color 0.15s ease, background-color 0.15s ease;
@@ -219,6 +269,11 @@ h1, h2, h3, h4, .article-title, .section-subheading {
 
   .pub-icon {
     color: $sage-green;
+  }
+
+  // Row of Cite/DOI/URL buttons
+  p {
+    margin: 0.35rem 0 0;
   }
 
   .author-highlighted {
@@ -289,20 +344,21 @@ body.dark {
     }
   }
 
-  .view-showcase .article-style {
-    color: $dark-muted;
-  }
+  .wg-portfolio .view-card {
+    background: $dark-surface;
+    box-shadow: 0 4px 16px rgba(#000, 0.35);
 
-  .view-showcase .article-title a {
-    color: $alice-blue;
-
-    &:hover {
-      color: #7cb8dc;
+    .article-style {
+      color: $dark-muted;
     }
-  }
 
-  .view-showcase img {
-    box-shadow: 0 6px 20px rgba(#000, 0.4);
+    .article-title a {
+      color: $alice-blue;
+
+      &:hover {
+        color: #7cb8dc;
+      }
+    }
   }
 
   .alert-note {

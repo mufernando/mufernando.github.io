@@ -20,10 +20,8 @@ sections:
           - project
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
-      columns: '2'
-      view: showcase
-      # For Showcase view, flip alternate rows?
-      flip_alt_rows: false
+      columns: '1'
+      view: card
   - block: collection
     id: publications
     content:
@@ -38,6 +36,6 @@ sections:
         exclude_featured: true
       count: 10
     design:
-      columns: '2'
+      columns: '1'
       view: citation
 ---
