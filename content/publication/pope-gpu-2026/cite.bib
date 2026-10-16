@@ -1,0 +1,17 @@
+@misc{pope_gpu_2026,
+ abstract = {Population genetics summary statistics—diversity, divergence, linkage disequilibrium, selection scans, and dimensionality reduction—are fundamental across human, agricultural, and ecological genomics. As whole-genome sequencing datasets have grown to hundreds of thousands of individuals, the cost of computing these statistics on conventional CPU implementations has become a major bottleneck: windowed scans of a single chromosome arm can take hours to days, and computation of pairwise linkage-disequilibrium statistics useful for demographic inference scales as O(n2) in sample size, often exceeding wall-clock budgets entirely. We present pg_gpu, a Python library implementing a comprehensive catalog of population-genetics summary statistics as fused CUDA kernels on NVIDIA GPUs. pg_gpu covers eleven categories spanning diversity and neutrality tests, divergence, admixture, the site-frequency spectrum, linkage disequilibrium, haplotype-based selection scans, dimensionality reduction (PCA, randomized PCA, local PCA / lostruct), distance distributions, relatedness, resampling, and a generalized weighted-SFS framework for custom ω estimators. On the full Ag1000G Phase 3 chromosome 3R arm (2,940 haplotypes, 10.9 million variants) pg_gpu agrees with scikit-allel and PLINK2 to machine precision while delivering a median 139× and maximum 1,096× speedup. For the multi-population LD statistics used by moments for demographic inference, pg_gpu is a drop-in replacement that yields a ~1,750-fold speedup over the native implementation. Whole chromosome arm scans, lostruct screens, and calculation of LD statistics complete on a single NVIDIA A100 in seconds to a few minutes.},
+ author = {Pope, Nathaniel S. and Rivera-Colón, Angel G. and Kapoor, Ananya and Korfmann, Kevin and Rodrigues, Murillo F. and Small, Scott T. and Teterina, Anastasia A. and Kern, Andrew D.},
+ copyright = {© 2026, Posted by openRxiv. This pre-print is available under a Creative Commons License (Attribution-NonCommercial 4.0 International), CC BY-NC 4.0, as described at http://creativecommons.org/licenses/by-nc/4.0/},
+ doi = {10.64898/2026.05.29.728868},
+ file = {Full Text PDF:/Users/rodrigmu/Zotero/storage/H8WHBAIW/Pope et al. - 2026 - GPU accelerated population genetics statistics using pg_gpu.pdf:application/pdf},
+ language = {en},
+ month = {May},
+ note = {ISSN: 2692-8205
+Pages: 2026.05.29.728868
+Section: New Results},
+ publisher = {bioRxiv},
+ title = {GPU accelerated population genetics statistics using pg_gpu},
+ url = {https://www.biorxiv.org/content/10.64898/2026.05.29.728868v1},
+ urldate = {2026-10-16},
+ year = {2026}
+}

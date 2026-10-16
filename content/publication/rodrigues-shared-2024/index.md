@@ -2,11 +2,11 @@
 title: Shared evolutionary processes shape landscapes of genomic variation in the
   great apes
 authors:
-- Murillo F Rodrigues
+- admin
 - Andrew D Kern
 - Peter L Ralph
 date: '2024-04-01'
-publishDate: '2024-04-19T17:00:52.893498Z'
+publishDate: '2026-10-16T04:01:47.545701Z'
 publication_types:
 - article-journal
 publication: '*Genetics*'
