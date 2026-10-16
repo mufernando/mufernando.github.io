@@ -1,0 +1,12 @@
+# Font style metadata
+name = "Genomics"
+
+# Jost (headings, nav) and JetBrains Mono load from Google Fonts; Georgia is a system font.
+# Full fallback stacks are set in assets/scss/custom.scss.
+google_fonts = "family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500"
+
+# Font families
+heading_font = "Jost"
+body_font = "Georgia"
+nav_font = "Jost"
+mono_font = "JetBrains Mono"

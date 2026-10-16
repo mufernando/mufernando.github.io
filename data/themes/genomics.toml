@@ -1,0 +1,48 @@
+# Theme metadata
+name = "Genomics"
+
+# Palette
+#   Baltic blue    #05668d  (primary)
+#   Rich cerulean  #427aa1  (hover / secondary)
+#   Alice blue     #ebf2fa  (alternate section background)
+#   Sage green     #679436  (accent)
+#   Lime moss      #a5be00  (decorative accent only: low contrast on white)
+
+[light]
+  # Primary
+  primary = "#05668d"
+
+  # Menu
+  menu_primary = "#ffffff"
+  menu_text = "#1f2d36"
+  menu_text_active = "#05668d"
+  menu_title = "#05668d"
+
+  # Links
+  link = "#05668d"
+  link_hover = "#427aa1"
+  link_decoration = "none"
+
+  # Home sections
+  home_section_odd = "#ffffff"
+  home_section_even = "#ebf2fa"
+
+[dark]
+  # Primary
+  primary = "#7cb8dc"
+
+  # Menu
+  menu_primary = "#0b1820"
+  menu_text = "rgba(235, 242, 250, 0.75)"
+  menu_text_active = "#a5be00"
+  menu_title = "#ebf2fa"
+
+  # Links
+  link = "#7cb8dc"
+  link_hover = "#a5be00"
+  link_decoration = "none"
+
+  # Backgrounds
+  background = "#0d1b24"
+  home_section_odd = "#0d1b24"
+  home_section_even = "#11232e"
