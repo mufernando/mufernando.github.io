@@ -1,0 +1,13 @@
+# Font style metadata
+name = "Genomics"
+
+# Futura isn't licensed for web embedding, so it's used where installed (macOS/iOS)
+# with Jost, a free Futura revival, as the web fallback. Georgia is a system font.
+# Full fallback stacks are set in assets/scss/custom.scss.
+google_fonts = "family=Jost:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500"
+
+# Font families
+heading_font = "Futura"
+body_font = "Georgia"
+nav_font = "Futura"
+mono_font = "JetBrains Mono"

@@ -7,9 +7,10 @@
 
 appearance:
   mode: light
-  theme_day: earth
-  font: minimal
-  font_size: L
+  theme_day: genomics
+  theme_night: genomics
+  font: genomics
+  font_size: M
 
 # SEO
 

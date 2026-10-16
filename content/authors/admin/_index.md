@@ -26,25 +26,6 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: Researcher interested in evolutionary genomics and computational biology.
 
-# Interests to show in About widget
-interests:
-  - Evolutionary Biology
-  - Population Genetics
-  - Computational Biology
-
-# Education to show in About widget
-education:
-  courses:
-    - course: PhD in Biology
-      institution: University of Oregon
-      year: 2024
-    - course: MSc in Genetics and Evolutionary Biology
-      institution: Universidade de São Paulo
-      year: 2018
-    - course: BSc in Biology
-      institution: Universidade de São Paulo
-      year: 2015
-
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 skills:

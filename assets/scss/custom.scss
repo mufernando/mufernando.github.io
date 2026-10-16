@@ -1,0 +1,330 @@
+// Custom styling layered on top of the Hugo Blox (Bootstrap) theme.
+// Colors live in data/themes/genomics.toml; fonts in data/fonts/genomics.toml.
+
+$baltic-blue: #05668d;
+$rich-cerulean: #427aa1;
+$alice-blue: #ebf2fa;
+$sage-green: #679436;
+$lime-moss: #a5be00;
+$ink: #1f2d36;
+$muted: #5b6b75;
+
+$dark-bg: #0d1b24;
+$dark-surface: #152a37;
+$dark-text: #dce6ee;
+$dark-muted: #9fb2c0;
+
+// Futura where installed, Jost (loaded from Google Fonts) everywhere else
+$font-heading: Futura, "Futura PT", Jost, "Century Gothic", "Trebuchet MS", sans-serif;
+$font-body: Georgia, "Times New Roman", serif;
+
+// ---------------------------------------------------------------------------
+// Base typography
+// ---------------------------------------------------------------------------
+
+html {
+  font-family: $font-body;
+}
+
+body {
+  color: $ink;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6,
+.section-subheading,
+.navbar-light,
+.btn {
+  font-family: $font-heading;
+}
+
+h1, h2, h3, h4, .article-title, .section-subheading {
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.article-style p,
+.article-style li {
+  line-height: 1.7;
+}
+
+// ---------------------------------------------------------------------------
+// Navbar
+// ---------------------------------------------------------------------------
+
+.navbar {
+  box-shadow: none;
+  border-bottom: 1px solid rgba($baltic-blue, 0.12);
+}
+
+.navbar-brand {
+  font-family: $font-heading;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  position: relative;
+  font-weight: 500;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.2rem;
+    height: 2px;
+    border-radius: 2px;
+    background: $sage-green;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+  }
+
+  &:hover::after,
+  &.active::after {
+    transform: scaleX(1);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Home section headings: serif title with a sage → lime accent bar
+// ---------------------------------------------------------------------------
+
+.home-section {
+  padding: 90px 0;
+}
+
+.section-heading h1,
+.wg-about-biography h1 {
+  font-weight: 600;
+  color: $baltic-blue;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 4px;
+    margin-top: 0.75rem;
+    border-radius: 2px;
+    background: linear-gradient(90deg, $sage-green, $lime-moss);
+  }
+}
+
+// Centered on small screens, like the theme's heading column
+@media (max-width: 991.98px) {
+  .section-heading h1::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// About / biography
+// ---------------------------------------------------------------------------
+
+#profile {
+  .avatar {
+    border: 5px solid #fff;
+    box-shadow: 0 0 0 3px $baltic-blue, 0 12px 30px rgba($baltic-blue, 0.25);
+  }
+
+  .portrait-title {
+    h2 {
+      font-family: $font-heading;
+      font-weight: 700;
+      color: $ink;
+      margin-top: 1.25rem;
+    }
+
+    h3 {
+      color: $muted;
+    }
+
+    a {
+      color: $baltic-blue;
+    }
+  }
+}
+
+.network-icon {
+  .big-icon {
+    font-size: 1.6rem;
+  }
+
+  a {
+    display: inline-block;
+    color: $baltic-blue;
+    transition: color 0.15s ease, transform 0.15s ease;
+
+    &:hover {
+      color: $sage-green;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Research showcase: rounded, lifted image cards
+// ---------------------------------------------------------------------------
+
+.view-showcase {
+  img {
+    // The theme sets an inline width of 540px, which overflows on phones
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba($ink, 0.12);
+    background: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  a:hover img {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba($baltic-blue, 0.22);
+  }
+
+  .article-title a {
+    color: $ink;
+
+    &:hover {
+      color: $baltic-blue;
+    }
+  }
+
+  .article-style {
+    color: $muted;
+  }
+
+  // Image stacks above the text on small screens; give the title room
+  @media (max-width: 767.98px) {
+    .article-title {
+      margin-top: 1rem !important;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Publications
+// ---------------------------------------------------------------------------
+
+.pub-list-item.view-citation {
+  padding: 0.75rem 1rem;
+  border-left: 3px solid transparent;
+  border-radius: 0 8px 8px 0;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+
+  &:hover {
+    border-left-color: $sage-green;
+    background: rgba($alice-blue, 0.6);
+  }
+
+  .pub-icon {
+    color: $sage-green;
+  }
+
+  .author-highlighted {
+    color: $baltic-blue;
+    font-weight: 600;
+  }
+}
+
+// Publications sits on the alice-blue band, so hover needs to read on blue too
+.home-section:nth-of-type(even) .pub-list-item.view-citation:hover {
+  background: rgba(#fff, 0.7);
+}
+
+.btn-outline-primary {
+  border-radius: 999px;
+}
+
+.alert-note {
+  border-left: 4px solid $baltic-blue;
+  border-radius: 8px;
+}
+
+// ---------------------------------------------------------------------------
+// Footer
+// ---------------------------------------------------------------------------
+
+.page-footer {
+  border-top: 1px solid rgba($baltic-blue, 0.12);
+}
+
+// ---------------------------------------------------------------------------
+// Dark mode
+// ---------------------------------------------------------------------------
+
+body.dark {
+  color: $dark-text;
+
+  .navbar {
+    border-bottom-color: rgba(#fff, 0.08);
+  }
+
+  .section-heading h1,
+  .wg-about-biography h1 {
+    color: $alice-blue;
+  }
+
+  #profile {
+    .avatar {
+      border-color: $dark-bg;
+      box-shadow: 0 0 0 3px #7cb8dc, 0 12px 30px rgba(#000, 0.4);
+    }
+
+    .portrait-title h2 {
+      color: $alice-blue;
+    }
+
+    .portrait-title h3,
+    .portrait-title a {
+      color: $dark-muted;
+    }
+  }
+
+  .network-icon a {
+    color: #7cb8dc;
+
+    &:hover {
+      color: $lime-moss;
+    }
+  }
+
+  .view-showcase .article-style {
+    color: $dark-muted;
+  }
+
+  .view-showcase .article-title a {
+    color: $alice-blue;
+
+    &:hover {
+      color: #7cb8dc;
+    }
+  }
+
+  .view-showcase img {
+    box-shadow: 0 6px 20px rgba(#000, 0.4);
+  }
+
+  .alert-note {
+    background: $dark-surface;
+    color: $dark-text;
+    border-color: #7cb8dc;
+
+    a {
+      color: #7cb8dc;
+    }
+  }
+
+  .pub-list-item.view-citation:hover,
+  .home-section:nth-of-type(even) .pub-list-item.view-citation:hover {
+    background: $dark-surface;
+  }
+
+  .pub-list-item .author-highlighted {
+    color: #7cb8dc;
+  }
+
+  .page-footer {
+    border-top-color: rgba(#fff, 0.08);
+  }
+}
