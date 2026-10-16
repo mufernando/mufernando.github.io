@@ -14,8 +14,8 @@ $dark-surface: #152a37;
 $dark-text: #dce6ee;
 $dark-muted: #9fb2c0;
 
-// Futura where installed, Jost (loaded from Google Fonts) everywhere else
-$font-heading: Futura, "Futura PT", Jost, "Century Gothic", "Trebuchet MS", sans-serif;
+// Jost is loaded from Google Fonts (see data/fonts/genomics.toml)
+$font-heading: Jost, "Century Gothic", "Trebuchet MS", sans-serif;
 $font-body: Georgia, "Times New Roman", serif;
 
 // ---------------------------------------------------------------------------
