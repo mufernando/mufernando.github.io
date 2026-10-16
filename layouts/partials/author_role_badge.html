@@ -1,0 +1,5 @@
+{{/* Small pill showing the site owner's author role on a publication. */}}
+{{ $labels := dict "first" "First author" "co-first" "Co-first author" "last" "Last author" "co-last" "Co-last author" }}
+{{ with partial "functions/author_role" . }}
+<span class="pub-role-badge pub-role-{{ . }}">{{ index $labels . }}</span>
+{{ end }}

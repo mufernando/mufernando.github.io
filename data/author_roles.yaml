@@ -1,0 +1,11 @@
+# Author role on each publication, keyed by the publication's folder name in
+# content/publication/. Papers not listed here get their role from author
+# position: "first" if admin is listed first, "last" if listed last.
+#
+# Use this file for shared roles, or to override the position-based default:
+#   co-first | co-last | first | last | none (no badge, excluded from filters)
+#
+# Kept outside the publication pages so `academic import --overwrite` can't wipe it.
+
+gower-accessible-2025: co-first
+miranda-gene-2026: co-last

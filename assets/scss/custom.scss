@@ -287,6 +287,26 @@ h1, h2, h3, h4, .article-title, .section-subheading {
   background: rgba(#fff, 0.7);
 }
 
+// Author-role badge (layouts/partials/author_role_badge.html)
+.pub-role-badge {
+  display: inline-block;
+  margin-right: 0.4rem;
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  font-family: $font-heading;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.6;
+  vertical-align: middle;
+  color: #fff;
+  background: $baltic-blue;
+}
+
+.pub-role-last,
+.pub-role-co-last {
+  background: $sage-green;
+}
+
 .btn-outline-primary {
   border-radius: 999px;
 }
@@ -378,6 +398,16 @@ body.dark {
 
   .pub-list-item .author-highlighted {
     color: #7cb8dc;
+  }
+
+  .pub-role-badge {
+    color: $dark-bg;
+    background: #7cb8dc;
+  }
+
+  .pub-role-last,
+  .pub-role-co-last {
+    background: $lime-moss;
   }
 
   .page-footer {
