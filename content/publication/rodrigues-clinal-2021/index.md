@@ -2,11 +2,11 @@
 title: Clinal and seasonal changes are correlated in Drosophila melanogaster natural
   populations
 authors:
-- Murillo F. Rodrigues
+- admin
 - Maria D. Vibranovski
 - Rodrigo Cogni
 date: '2021-08-01'
-publishDate: '2024-04-19T17:00:52.900839Z'
+publishDate: '2026-10-16T04:01:47.560161Z'
 publication_types:
 - article-journal
 publication: '*Evolution*'

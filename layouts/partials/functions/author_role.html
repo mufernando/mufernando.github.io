@@ -1,0 +1,18 @@
+{{/* Author role of the site owner (`admin`) on a publication page.
+     Returns "first", "co-first", "last", "co-last", or "" (no role).
+     data/author_roles.yaml overrides take precedence; otherwise the role is
+     derived from admin's position in the author list. */}}
+{{ $role := "" }}
+{{ with .File }}
+  {{ $role = index site.Data.author_roles .ContentBaseName | default "" }}
+{{ end }}
+{{ if and (not $role) .Params.authors }}
+  {{ $authors := .Params.authors }}
+  {{ if eq (index $authors 0) "admin" }}
+    {{ $role = "first" }}
+  {{ else if eq (index $authors (sub (len $authors) 1)) "admin" }}
+    {{ $role = "last" }}
+  {{ end }}
+{{ end }}
+{{ if eq $role "none" }}{{ $role = "" }}{{ end }}
+{{ return $role }}

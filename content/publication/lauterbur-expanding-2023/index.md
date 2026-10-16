@@ -24,7 +24,7 @@ authors:
 - Alice Pearson
 - David Peede
 - Manolo F Perez
-- Murillo F Rodrigues
+- admin
 - Chris CR Smith
 - Jeffrey P Spence
 - Anastasia Teterina
@@ -45,7 +45,7 @@ authors:
 - Daniel R Schrider
 - Ilan Gronau
 date: '2023-06-01'
-publishDate: '2024-04-19T17:00:52.904541Z'
+publishDate: '2026-10-16T04:01:47.552310Z'
 publication_types:
 - article-journal
 publication: '*eLife*'
@@ -78,9 +78,9 @@ abstract: Simulation is a key tool in population genetics for both methods devel
   especially in non-model organisms, making them available, transparent, and accessible
   to everyone.
 tags:
-- Open source
-- Population genetics
-- Simulations
+- open source
+- population genetics
+- simulations
 links:
 - name: URL
   url: https://doi.org/10.7554/eLife.84874

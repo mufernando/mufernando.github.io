@@ -1,11 +1,38 @@
 ---
 title: Inbreeding and deleterious variation in South Asian populations
 authors:
-- Jeffrey D Wall
-- Murillo F Rodrigues
-date: '2025-01-01'
-publishDate: '2025-12-11T19:33:00.034933Z'
+- Jeffrey D. Wall
+- admin
+date: '2025-10-01'
+publishDate: '2026-10-16T04:01:47.535837Z'
 publication_types:
 - article-journal
 publication: '*Scientific Reports*'
+doi: 10.1038/s41598-025-18348-5
+abstract: Consanguinity (or inbreeding) refers to the offspring of unions between
+  closely related individuals. It is associated with a wide range of adverse outcomes,
+  including increased mortality and disease burden. More than a billion people live
+  in communities where consanguineous marriages are common, and these communities
+  generally have high rates of rare, recessive diseases. Here, we estimate the degree
+  of inbreeding in a wide range of groups, primarily from South Asia, and highlight
+  shortcomings of previous inbreeding estimation methods. The estimated proportion
+  of consanguineous individuals varies widely by country and group, ranging from 9.3%
+  in Bangladesh to 42.8% in Pakistan for medical cohorts, and from 0 to 100% in Indian
+  indigenous (Adivasi) groups. Within specific subgroups, country-of-residence influences
+  consanguinity proportions, with Indian subgroups showing more consanguinity than
+  their counterparts in other countries. Isolated groups identified from contemporary
+  observations to have reduced population sizes (e.g., Jarawa, Onge, Nicobarese, Aeta,
+  Toda and Toto) all display both increased levels of inbreeding and decreased estimates
+  of current effective population size, in line with expectations. Finally, we quantify
+  the genetic ‘cost’ of inbreeding by tabulating the numbers of presumed deleterious
+  mutations across runs of homozygosity (ROH) in inbred individuals. We find a greater
+  density of these deleterious mutations in long ROH, consistent with standard evolutionary
+  models of purifying selection, and find evidence for the reduced efficacy of purifying
+  selection in small, isolated populations.
+tags:
+- Evolution
+- Genetics
+links:
+- name: URL
+  url: https://www.nature.com/articles/s41598-025-18348-5
 ---

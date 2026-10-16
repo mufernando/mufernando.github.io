@@ -5,11 +5,11 @@ authors:
 - Sean Stankowski
 - Madeline A. Chase
 - Allison M. Fuiten
-- Murillo F. Rodrigues
+- admin
 - Peter L. Ralph
 - Matthew A. Streisfeld
 date: '2019-07-01'
-publishDate: '2024-04-19T17:00:52.909017Z'
+publishDate: '2026-10-16T04:01:47.568266Z'
 publication_types:
 - article-journal
 publication: '*PLOS Biology*'

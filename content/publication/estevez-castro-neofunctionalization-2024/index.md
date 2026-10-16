@@ -3,7 +3,7 @@ title: Neofunctionalization driven by positive selection led to the retention of
   loqs2 gene encoding an Aedes specific dsRNA binding protein
 authors:
 - Carlos F. Estevez-Castro
-- Murillo F. Rodrigues
+- admin
 - Antinéa Babarit
 - Flávia V. Ferreira
 - Elisa G. de Andrade
@@ -13,7 +13,7 @@ authors:
 - João T. Marques
 - Roenick P. Olmo
 date: '2024-01-01'
-publishDate: '2024-04-19T17:00:52.888420Z'
+publishDate: '2026-10-16T04:01:47.548945Z'
 publication_types:
 - article-journal
 publication: '*BMC Biology*'
@@ -30,10 +30,10 @@ abstract: Mosquito borne viruses, such as dengue, Zika, yellow fever and Chikung
   a major antiviral mechanism in insects.
 tags:
 - Aedes mosquitoes
-- Double-stranded rna (dsrna)
-- Dsrna binding protein (dsrbp)
-- Loqs2
-- Rna interference (rnai)
+- Double-stranded RNA (dsRNA)
+- dsRNA binding protein (dsRBP)
+- loqs2
+- RNA interference (RNAi)
 links:
 - name: URL
   url: https://doi.org/10.1186/s12915-024-01821-4
